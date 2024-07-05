@@ -24,7 +24,14 @@ header {
   display: flex;
   justify-content: space-between;
 }
-
+.header-image {
+  border: 1px solid black;
+  background-color: lightgray;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 32px;
+}
 .contact-info {
   text-align: end;
 }
@@ -36,14 +43,16 @@ header {
   row-gap: 20px;
 }
 
-#hero {
-  padding: 5vh 10vw;
+#hero,
+#events {
+  padding: 2.5vh 10vw;
 }
 
 .hero-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 .hero-image {
@@ -80,4 +89,61 @@ header {
 .hero-hours td {
   border-top: 1px solid black;
   padding: 6px 0;
+}
+.icon-container {
+  display: flex;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.icon-container > [class*="icon"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 0 0%;
+  gap: 12px;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 12px;
+  background-color: lightgray;
+}
+
+.icon-container p {
+  align-self: center;
+}
+
+#events {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.event-parent-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.event-container {
+  display: flex;
+  gap: 6px;
+}
+
+.event-date {
+  flex: 0 0 10%;
+  text-align: center;
+  border: 1px solid black;
+  background-color: lightgray;
+  padding: 10px 0;
+}
+
+.event-info {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px dashed black;
 }
