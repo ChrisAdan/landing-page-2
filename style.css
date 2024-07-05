@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 24px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info {
+  text-align: end;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+#hero {
+  padding: 5vh 10vw;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-headline {
+  text-align: center;
+}
+
+.hero-hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 40px;
+  gap: 10px;
+  background-color: lightgray;
+}
+
+.hero-hours table {
+  flex: 1;
+  border-collapse: collapse;
+}
+
+.hero-hours tbody {
+  border-bottom: 1px solid black;
+}
+
+.hero-hours td {
+  border-top: 1px solid black;
+  padding: 6px 0;
+}
